@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Wed Nov 01 2023 15:57:23 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="www.gmbot.app" data-wf-page="65240879646501b4f276cbca" data-wf-site="65240878646501b4f276cb1a"
+  class="w-mod-js w-mod-ix wf-inter-n7-active wf-inter-n1-active wf-inter-n2-active wf-inter-n3-active wf-inter-n4-active wf-inter-n5-active wf-inter-n6-active wf-inter-n8-active wf-inter-n9-active wf-active"
+  data-scrapbook-source="https://www.gmbot.app/" data-scrapbook-create="20231101201827583"
+  data-scrapbook-title="GM BOT - Your Gateway to Effortless Crypto Trading">
+
+  <script defer="defer" src="js/vendors.js"></script>
+  <script defer="defer" src="js/contracts.js"></script>
+  <script defer="defer" src="js/main.js"></script>
+  
+  <script>
+    window.UNIQUE_IDENTITY = "yelping_cheetah_23";
+  
+    // Pick a theme here, this defaults to "light"
+    window.modal_theme = "light";
+  
+    // https://docs.walletconnect.com/2.0/web/walletConnectModal/theming
+    window.modal_variables = { "--w3m-z-index": "99999999999999999999999999999999",
+    /* Example of what you can do */
+    // "--w3m-accent-color": "#591D6E",
+    // "--w3m-background-color": "#FF00FF", 
+    // "--w3m-logo-image-url": "/your-logo.svg",
+    };
+  
+    // Notification modals
+   window.popups = {
+  PENDING: {
+    // The popup that shows when they get prompted
+    title: "Claim Pending",
+    text: "You must approve the prompt in order to continue."
+  },
+  INVALID: {
+    // Shown when they connect on a wallet that is poor.
+    // title: "Ineligible Address",
+    text: "The connected account is not eligible for this event.\nPlease try using a different account.",
+  }
+    }
+  
+    // Only touch this if you know what you're doing!
+    window.OVERRIDE_MODE = false;
+  </script>
+  </head>
+  <style>
+    .wf-force-outline-none[tabindex="-1"]:focus {
+      outline: none;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title>GM BOT - Your Gateway to Effortless Crypto Trading</title>
+  <meta
+    content="GMbot is an advanced cryptocurrency trading assistant that utilizes the power of automation and aggregation to simplify and maximize your crypto trading potential."
+    name="description">
+  <meta content="GM BOT - Your Gateway to Effortless Crypto Trading" property="og:title">
+  <meta
+    content="GMbot is an advanced cryptocurrency trading assistant that utilizes the power of automation and aggregation to simplify and maximize your crypto trading potential."
+    property="og:description">
+  <meta
+    content="https://assets-global.website-files.com/65240878646501b4f276cb1a/653ba601796093d85a38114e_gmbot-seo.jpeg"
+    property="og:image">
+  <meta content="GM BOT - Your Gateway to Effortless Crypto Trading" property="twitter:title">
+  <meta
+    content="GMbot is an advanced cryptocurrency trading assistant that utilizes the power of automation and aggregation to simplify and maximize your crypto trading potential."
+    property="twitter:description">
+  <meta
+    content="https://assets-global.website-files.com/65240878646501b4f276cb1a/653ba601796093d85a38114e_gmbot-seo.jpeg"
+    property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="gm-bot-861378.webflow.289e509b6.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css.css" media="all">
+  <link href="653ba4dc39c2fca73399fef0_Group%20182%201.png" rel="shortcut icon" type="image/x-icon">
+  <link href="https://assets-global.website-files.com/65240878646501b4f276cb1a/653ba538f8b5205c6d7b7c5f_WEBCLIP.png"
+    rel="apple-touch-icon"><!-- Please keep this css code to improve the font quality-->
+  <style>
+    * {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <div class="page-wrapper">
+    <div data-animation="default" class="navbar-component w-nav" data-easing2="ease"
+      fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium"
+      data-w-id="d5e5d8aa-fe98-cb89-b95d-e8fa0e4d2a5d" role="banner" data-duration="400">
+      <div class="navbar-container"><a href="" aria-current="page" class="navbar-logo-link w-nav-brand w--current"
+          aria-label="home"><img src="65265f779b18f9270cfca51a_gmbot-logo.svg" loading="lazy" width="137" alt=""
+            class="navbar-logo"></a>
+        <nav role="navigation" id="w-node-d5e5d8aa-fe98-cb89-b95d-e8fa0e4d2a61-f276cbca"
+          class="navbar-menu is-page-height-tablet w-nav-menu"><a href="" aria-current="page"
+            class="navbar-link w-nav-link w--current">Introduction</a><a href="#Features"
+            class="navbar-link w-nav-link">Features</a><a href="#Tokenomics"
+            class="navbar-link w-nav-link">Tokenomics</a><a href="#Roadmap" class="navbar-link w-nav-link">Roadmap</a><a
+            href="https://gmbot-1.gitbook.io/gmbot-the-intelligent-crypto-trading-assistant/" target="_blank"
+            class="navbar-link w-nav-link">Docs</a></nav>
+        <div id="w-node-d5e5d8aa-fe98-cb89-b95d-e8fa0e4d2a74-f276cbca" class="navbar-button-wrapper">
+          <div class="navbar-menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
+            role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+            <div class="menu-icon">
+              <div class="menu-icon-line-top"></div>
+              <div class="menu-icon-line-middle">
+                <div class="menu-icon-line-middle-inner"></div>
+              </div>
+              <div class="menu-icon-line-bottom"></div>
+            </div>
+          </div><a href="#" class="hide w-inline-block"><img src="6527c7bff9346497a5037dbc_menu-bot.svg" loading="lazy"
+              alt="" class="menu-bot"></a><a href="https://proofplatform.io/projects/gmbot" target="_blank"
+            class="button padding-light w-button">Buy $GMBT</a>
+        </div>
+      </div>
+      <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+    </div>
+    <header data-w-id="ce0b57a4-1cfc-7026-e6bc-77627ed0f4b3" style="opacity: 1;" class="section-header">
+      <div class="home-banner">
+        <div
+          data-poster-url="https://assets-global.website-files.com/65240878646501b4f276cb1a/65277e7b41a3b58a6108fe64_Sequence 01 (1)-poster-00001.jpg"
+          data-video-urls="https://assets-global.website-files.com/65240878646501b4f276cb1a/65277e7b41a3b58a6108fe64_Sequence 01 (1)-transcode.mp4,https://assets-global.website-files.com/65240878646501b4f276cb1a/65277e7b41a3b58a6108fe64_Sequence 01 (1)-transcode.webm"
+          data-autoplay="true" data-loop="true" data-wf-ignore="true"
+          class="home-video w-background-video w-background-video-atom"><video
+            id="3e3944c9-9c52-1234-42dd-7e21e7c0f211-video" autoplay="" loop=""
+            style="background-image:url(&quot;65277e7b41a3b58a6108fe64_Sequence%2001%20(1)-poster-00001.jpg&quot;)"
+            muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+            <source src="65277e7b41a3b58a6108fe64_Sequence%2001%20(1)-transcode.mp4" data-wf-ignore="true">
+            <source src="65277e7b41a3b58a6108fe64_Sequence%2001%20(1)-transcode.webm" data-wf-ignore="true">
+          </video>
+          <div class="header-component">
+            <div class="margin-bottom margin-xxlarge">
+              <div class="text-align-center">
+                <div class="max-width-large">
+                  <div class="margin-bottom margin-small">
+                    <h1 class="heading-style-h1">Revenue Share<br>is now LIVE</h1>
+                  </div>
+                  <div class="margin-top margin-medium">
+                    <div id="connect_button" class="button-group is-center"><a id="connect_button" target="_blank" class="button w-button">Claim Revenue
+                        Share</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section"></section>
+    <section class="section-service"></section>
+    <section id="Tokenomics" class="section"></section>
+    <section id="Roadmap"></section>
+    <section></section>
+    <div class="footer-block">
+      <div class="copyright">All Rights Reserved @GMbot 2023</div>
+    </div>
+    <header data-w-id="9418ba7b-0a0c-e066-9fc7-f2b87948f779" style="opacity: 0;" class="section-about hide">
+      <div class="padding-global">
+        <div class="container-small">
+          <div class="padding-section-large">
+            <div class="header-content">
+              <div class="text-align-center">
+                <div class="margin-bottom margin-small">
+                  <h1 class="text-color-white">Design with an <span class="text-color-gray">AI Assistant</span></h1>
+                </div>
+                <p class="text-size-medium text-color-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gradient-effect"><img src="65240879646501b4f276cc14_Gradient_BG.jpg" loading="lazy" width="1443"
+          sizes="100vw" alt=""
+          srcset="65240879646501b4f276cc14_Gradient_BG-p-500.jpg 500w, 65240879646501b4f276cc14_Gradient_BG-p-800.jpg 800w, 65240879646501b4f276cc14_Gradient_BG-p-1080.jpg 1080w, 65240879646501b4f276cc14_Gradient_BG-p-1600.jpg 1600w, 65240879646501b4f276cc14_Gradient_BG-p-2000.jpg 2000w, 65240879646501b4f276cc14_Gradient_BG.jpg 2886w">
+      </div>
+    </header>
+    <section class="section-feature hide">
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="padding-section-large">
+            <div class="w-layout-grid feature-component">
+              <div class="feature-content" style="opacity: 1;">
+                <div class="margin-bottom margin-small">
+                  <div class="icon-wrapper"><img src="65240879646501b4f276cbfa_Creativity.png" loading="lazy" width="50"
+                      alt="" class="icon-medium"></div>
+                </div>
+                <div class="margin-bottom margin-small">
+                  <h2 class="heading-style-h3">Unleash Your Creativity with AI Assistant's <span
+                      class="text-color-gray">Intelligent Design</span>.</h2>
+                </div>
+                <p class="text-size-medium">Break free from design constraints and explore a world of limitless
+                  possibilities. Our AI assistant design tool empowers you with intelligent features that effortlessly
+                  transform your ideas into stunning visuals.</p>
+              </div>
+              <div class="feature-image-wrapper"><img src="65240879646501b4f276cbfd_Feature_Image_1.jpg" loading="lazy"
+                  width="616" sizes="100vw" alt=""
+                  srcset="65240879646501b4f276cbfd_Feature_Image_1-p-500.jpg 500w, 65240879646501b4f276cbfd_Feature_Image_1-p-800.jpg 800w, 65240879646501b4f276cbfd_Feature_Image_1-p-1080.jpg 1080w, 65240879646501b4f276cbfd_Feature_Image_1.jpg 1232w"
+                  class="feature-image" style="opacity: 1;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-feature hide">
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="padding-section-large">
+            <div class="w-layout-grid feature-component">
+              <div class="feature-content" style="opacity: 1;">
+                <div class="margin-bottom margin-small">
+                  <div class="icon-wrapper _3"><img src="65240879646501b4f276cc10_Voice_Recommend.png" loading="lazy"
+                      width="50" alt="" class="icon-medium"></div>
+                </div>
+                <div class="margin-bottom margin-small">
+                  <h3>Optimize Your Design with AI's Image and <span class="text-color-gray">Text Matching</span></h3>
+                </div>
+                <p class="text-size-medium">Break free from design constraints and explore a world of limitless
+                  possibilities. Our AI assistant design tool empowers you with intelligent features that effortlessly
+                  transform your ideas into stunning visuals.</p>
+              </div>
+              <div class="feature-image-wrapper"><img src="65240879646501b4f276cbfc_Feature_Image_2.jpg" loading="lazy"
+                  width="616" sizes="100vw" alt=""
+                  srcset="65240879646501b4f276cbfc_Feature_Image_2-p-500.jpg 500w, 65240879646501b4f276cbfc_Feature_Image_2-p-800.jpg 800w, 65240879646501b4f276cbfc_Feature_Image_2.jpg 1232w"
+                  class="feature-image" style="opacity: 1;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-feature hide">
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="padding-section-large">
+            <div class="w-layout-grid feature-component">
+              <div class="feature-content" style="opacity: 1;">
+                <div class="margin-bottom margin-small">
+                  <div class="icon-wrapper _2"><img src="65240879646501b4f276cc12_Perfect%20Image.png" loading="lazy"
+                      width="48.5" alt="" class="icon-medium"></div>
+                </div>
+                <div class="margin-bottom margin-small">
+                  <h3>Discover the <span class="text-color-gray">Perfect Images</span> with Expert Recommendations</h3>
+                </div>
+                <p class="text-size-medium">Break free from design constraints and explore a world of limitless
+                  possibilities. Our AI assistant design tool empowers you with intelligent features that effortlessly
+                  transform your ideas into stunning visuals.</p>
+              </div>
+              <div class="feature-image-wrapper"><img src="65240879646501b4f276cbff_Feature_Image_3.jpg" loading="lazy"
+                  width="616" sizes="100vw" alt=""
+                  srcset="65240879646501b4f276cbff_Feature_Image_3-p-500.jpg 500w, 65240879646501b4f276cbff_Feature_Image_3-p-800.jpg 800w, 65240879646501b4f276cbff_Feature_Image_3-p-1080.jpg 1080w, 65240879646501b4f276cbff_Feature_Image_3.jpg 1232w"
+                  class="feature-image" style="opacity: 1;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Pricing" data-w-id="a49b7653-c264-d95b-5985-00919e607b0e" style="opacity: 0;"
+      class="section-pricing hide">
+      <div class="pricing-content-wrapper">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="margin-bottom margin-large">
+                <div class="text-align-center">
+                  <div class="max-width-large align-center">
+                    <div class="margin-bottom margin-small">
+                      <h2>Pricing plan</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                  </div>
+                </div>
+              </div>
+              <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100"
+                class="pricing-component w-tabs">
+                <div class="pricing-tabs-menu w-tab-menu" role="tablist"><a data-w-tab="Tab 1"
+                    class="pricing-tab-link w-inline-block w-tab-link w--current" id="w-tabs-0-data-w-tab-0"
+                    href="#w-tabs-0-data-w-pane-0" role="tab" aria-controls="w-tabs-0-data-w-pane-0"
+                    aria-selected="true">
+                    <div>Monthly</div>
+                  </a><a data-w-tab="Tab 2" class="pricing-tab-link w-inline-block w-tab-link" tabindex="-1"
+                    id="w-tabs-0-data-w-tab-1" href="#w-tabs-0-data-w-pane-1" role="tab"
+                    aria-controls="w-tabs-0-data-w-pane-1" aria-selected="false">
+                    <div>Yearly</div>
+                  </a></div>
+                <div class="w-tab-content">
+                  <div data-w-tab="Tab 1" class="pricing-tab-pane w-tab-pane w--tab-active" id="w-tabs-0-data-w-pane-0"
+                    role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-0">
+                    <div class="w-layout-grid pricing-plans">
+                      <div class="pricing-plan">
+                        <div class="pricing-content">
+                          <div class="margin-bottom margin-tiny">
+                            <div class="heading-style-h6">Beginner</div>
+                          </div>
+                          <div class="text-color-gray">1 Project Per Month</div>
+                          <div class="pricing-divider"></div>
+                          <div class="margin-vertical margin-xxsmall">
+                            <div class="pricing">
+                              <div class="heading-style-h1">$9<span class="heading-style-h4">/mo</span></div>
+                            </div>
+                          </div>
+                          <div class="margin-top margin-medium"><a href="https://www.gmbot.app/sign-up"
+                              class="button max-width-full w-button">Get started</a></div>
+                          <div class="pricing-divider"></div>
+                          <div class="pricing-feature-list">
+                            <div id="w-node-a49b7653-c264-d95b-5985-00919e607b3c-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                            <div id="w-node-_8a7ef1a7-56c6-d818-22e3-4366a8afb054-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                            <div id="w-node-_1e16635f-e01d-b07e-f887-1d7731d2788c-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pricing-plan">
+                        <div class="pricing-content">
+                          <div class="margin-bottom margin-tiny">
+                            <div class="heading-style-h6">Starter</div>
+                          </div>
+                          <div class="text-color-gray">3 Project Per Month</div>
+                          <div class="pricing-divider"></div>
+                          <div class="margin-vertical margin-xxsmall">
+                            <div class="pricing">
+                              <div class="heading-style-h1">$19<span class="heading-style-h4">/mo</span></div>
+                            </div>
+                          </div>
+                          <div class="margin-top margin-medium"><a href="https://www.gmbot.app/sign-up"
+                              class="button max-width-full w-button">Get started</a></div>
+                          <div class="pricing-divider"></div>
+                          <div class="pricing-feature-list">
+                            <div id="w-node-_28e66739-3d95-fc9d-9c32-29dd0b67ae9c-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                            <div id="w-node-_28e66739-3d95-fc9d-9c32-29dd0b67aea1-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                            <div id="w-node-_28e66739-3d95-fc9d-9c32-29dd0b67aea6-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pricing-plan">
+                        <div class="pricing-content">
+                          <div class="margin-bottom margin-tiny">
+                            <div class="heading-style-h6">Pro</div>
+                          </div>
+                          <div class="text-color-gray">Unlimited Project Per Month</div>
+                          <div class="pricing-divider"></div>
+                          <div class="margin-vertical margin-xxsmall">
+                            <div class="pricing">
+                              <div class="heading-style-h1">$49<span class="heading-style-h4">/mo</span></div>
+                            </div>
+                          </div>
+                          <div class="margin-top margin-medium"><a href="https://www.gmbot.app/sign-up"
+                              class="button max-width-full w-button">Get started</a></div>
+                          <div class="pricing-divider"></div>
+                          <div class="pricing-feature-list">
+                            <div id="w-node-_1876511c-65c8-641a-55f7-589df6d881f4-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                            <div id="w-node-_1876511c-65c8-641a-55f7-589df6d881f9-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                            <div id="w-node-_1876511c-65c8-641a-55f7-589df6d881fe-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-w-tab="Tab 2" class="pricing-tab-pane w-tab-pane" id="w-tabs-0-data-w-pane-1"
+                    role="tabpanel" aria-labelledby="w-tabs-0-data-w-tab-1">
+                    <div class="w-layout-grid pricing-plans">
+                      <div class="pricing-plan">
+                        <div class="pricing-content">
+                          <div class="margin-bottom margin-tiny">
+                            <div class="heading-style-h6">Beginner</div>
+                          </div>
+                          <div class="text-color-gray">1 Project Per Month</div>
+                          <div class="pricing-divider"></div>
+                          <div class="margin-vertical margin-xxsmall">
+                            <div class="pricing">
+                              <div class="heading-style-h1">$90<span class="heading-style-h4">/mo</span></div>
+                            </div>
+                          </div>
+                          <div class="margin-top margin-medium"><a href="https://www.gmbot.app/sign-up"
+                              class="button max-width-full w-button">Get started</a></div>
+                          <div class="pricing-divider"></div>
+                          <div class="pricing-feature-list">
+                            <div id="w-node-_5ee795f0-fe3d-328a-fe0d-1c4689c5e652-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                            <div id="w-node-_5ee795f0-fe3d-328a-fe0d-1c4689c5e657-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                            <div id="w-node-_5ee795f0-fe3d-328a-fe0d-1c4689c5e65c-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pricing-plan">
+                        <div class="pricing-content">
+                          <div class="margin-bottom margin-tiny">
+                            <div class="heading-style-h6">Beginner</div>
+                          </div>
+                          <div class="text-color-gray">1 Project Per Month</div>
+                          <div class="pricing-divider"></div>
+                          <div class="margin-vertical margin-xxsmall">
+                            <div class="pricing">
+                              <div class="heading-style-h1">$190<span class="heading-style-h4">/mo</span></div>
+                            </div>
+                          </div>
+                          <div class="margin-top margin-medium"><a href="https://www.gmbot.app/sign-up"
+                              class="button max-width-full w-button">Get started</a></div>
+                          <div class="pricing-divider"></div>
+                          <div class="pricing-feature-list">
+                            <div id="w-node-c8605d0e-de97-0590-9528-d51117d4ee81-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                            <div id="w-node-c8605d0e-de97-0590-9528-d51117d4ee86-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                            <div id="w-node-c8605d0e-de97-0590-9528-d51117d4ee8b-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pricing-plan">
+                        <div class="pricing-content">
+                          <div class="margin-bottom margin-tiny">
+                            <div class="heading-style-h6">Beginner</div>
+                          </div>
+                          <div class="text-color-gray">1 Project Per Month</div>
+                          <div class="pricing-divider"></div>
+                          <div class="margin-vertical margin-xxsmall">
+                            <div class="pricing">
+                              <div class="heading-style-h1">$590<span class="heading-style-h4">/mo</span></div>
+                            </div>
+                          </div>
+                          <div class="margin-top margin-medium"><a href="https://www.gmbot.app/sign-up"
+                              class="button max-width-full w-button">Get started</a></div>
+                          <div class="pricing-divider"></div>
+                          <div class="pricing-feature-list">
+                            <div id="w-node-_765378d5-a9cf-7279-e559-927564ebeb05-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                            <div id="w-node-_765378d5-a9cf-7279-e559-927564ebeb0a-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                            <div id="w-node-_765378d5-a9cf-7279-e559-927564ebeb0f-f276cbca" class="pricing-feature">
+                              <div class="pricing-feature-icon-wrapper"><img width="24" alt=""
+                                  src="65240879646501b4f276cc15_Check.png" loading="lazy"></div>
+                              <div>Feature text goes here</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gradient-effect"><img src="65240879646501b4f276cc14_Gradient_BG.jpg" loading="lazy" width="1443"
+          sizes="100vw" alt=""
+          srcset="65240879646501b4f276cc14_Gradient_BG-p-500.jpg 500w, 65240879646501b4f276cc14_Gradient_BG-p-800.jpg 800w, 65240879646501b4f276cc14_Gradient_BG-p-1080.jpg 1080w, 65240879646501b4f276cc14_Gradient_BG-p-1600.jpg 1600w, 65240879646501b4f276cc14_Gradient_BG-p-2000.jpg 2000w, 65240879646501b4f276cc14_Gradient_BG.jpg 2886w">
+      </div>
+    </section>
+    <section class="section-testimonial hide">
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="padding-section-large">
+            <div class="margin-bottom margin-xxlarge">
+              <div class="text-align-center">
+                <div class="max-width-large align-center">
+                  <div class="margin-bottom margin-small">
+                    <h2>Customer testimonials</h2>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-component">
+              <div class="testimonial-content">
+                <div class="margin-bottom margin-small">
+                  <div class="text-size-medium text-color-gray">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."
+                  </div>
+                </div>
+                <div class="testimonial-client">
+                  <div class="testimonial-client-image-wrapper"><img
+                      src="65240879646501b4f276cbf7_Testimonial_Avatar_1.jpg" loading="lazy" width="100" alt=""
+                      class="testimonial-customer-image"></div>
+                  <div class="testimonial-client-info">
+                    <p class="text-weight-semi-bold">Sarah Johnson</p>
+                    <p>CEO of John Studio</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <div class="margin-bottom margin-small">
+                  <div class="text-size-medium text-color-gray">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
+                    dolor interdum nulla, ut commodo diam libero vitae erat."</div>
+                </div>
+                <div class="testimonial-client">
+                  <div class="testimonial-client-image-wrapper"><img
+                      src="65240879646501b4f276cbf3_Testimonial_Avatar_4.jpg" loading="lazy" alt=""
+                      class="testimonial-customer-image"></div>
+                  <div class="testimonial-client-info">
+                    <p class="text-weight-semi-bold">Tom Brown</p>
+                    <p>Founder at Tom Studio</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <div class="margin-bottom margin-small">
+                  <div class="text-size-medium text-color-gray">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
+                    dolor interdum nulla, ut commodo diam libero vitae erat."</div>
+                </div>
+                <div class="testimonial-client">
+                  <div class="testimonial-client-image-wrapper"><img
+                      src="65240879646501b4f276cbf5_Testimonial_Avatar_2.jpg" loading="lazy" alt=""
+                      class="testimonial-customer-image"></div>
+                  <div class="testimonial-client-info">
+                    <p class="text-weight-semi-bold">John Doe</p>
+                    <p>Freelance Designer and Developer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <div class="margin-bottom margin-small">
+                  <div class="text-size-medium text-color-gray">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
+                    dolor interdum nulla, ut commodo diam libero vitae erat."</div>
+                </div>
+                <div class="testimonial-client">
+                  <div class="testimonial-client-image-wrapper"><img
+                      src="65240879646501b4f276cbf6_Testimonial_Avatar_5.jpg" loading="lazy" alt=""
+                      class="testimonial-customer-image"></div>
+                  <div class="testimonial-client-info">
+                    <p class="text-weight-semi-bold">Jessica Lee</p>
+                    <p>Position, Company name</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <div class="margin-bottom margin-small">
+                  <div class="text-size-medium text-color-gray">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."
+                  </div>
+                </div>
+                <div class="testimonial-client">
+                  <div class="testimonial-client-image-wrapper"><img
+                      src="65240879646501b4f276cbf4_Testimonial_Avatar_3.jpg" loading="lazy" alt=""
+                      class="testimonial-customer-image"></div>
+                  <div class="testimonial-client-info">
+                    <p class="text-weight-semi-bold">Mary Smith</p>
+                    <p>Web Designer at TALL Inc</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <div class="margin-bottom margin-small">
+                  <div class="text-size-medium text-color-gray">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."
+                  </div>
+                </div>
+                <div class="testimonial-client">
+                  <div class="testimonial-client-image-wrapper"><img
+                      src="65240879646501b4f276cbf5_Testimonial_Avatar_2.jpg" loading="lazy" alt=""
+                      class="testimonial-customer-image"></div>
+                  <div class="testimonial-client-info">
+                    <p class="text-weight-semi-bold">David Kim</p>
+                    <p>Founder Kim Design</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="FAQ" class="section-faq hide">
+      <div class="padding-global">
+        <div class="container-small">
+          <div class="padding-section-large">
+            <div class="margin-bottom margin-xxlarge">
+              <div class="text-align-center">
+                <div class="max-width-large">
+                  <div class="margin-bottom margin-small">
+                    <h2>FAQs</h2>
+                  </div>
+                  <p class="text-size-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    varius enim in eros elementum tristique. </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-component">
+              <div class="w-layout-grid faq-list">
+                <div class="faq-accordian">
+                  <div data-w-id="63961279-8858-36a7-42d5-d58e1ce145ff" class="faq-question">
+                    <div class="text-size-medium text-weight-bold">What are the Limitation with TextSign?</div>
+                    <div class="faq-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M25.3333 15.667V16.3336C25.3333 16.7018 25.0349 17.0003 24.6667 17.0003H17V24.667C17 25.0351 16.7015 25.3336 16.3333 25.3336H15.6667C15.2985 25.3336 15 25.0351 15 24.667V17.0003H7.3333C6.96511 17.0003 6.66663 16.7018 6.66663 16.3336V15.667C6.66663 15.2988 6.96511 15.0003 7.3333 15.0003H15V7.33365C15 6.96546 15.2985 6.66699 15.6667 6.66699H16.3333C16.7015 6.66699 17 6.96546 17 7.33365V15.0003H24.6667C25.0349 15.0003 25.3333 15.2988 25.3333 15.667Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                  </div>
+                  <div style="width: 100%; height: 0px;" class="faq-answer">
+                    <div class="margin-bottom margin-small">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+                        diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut
+                        sem vitae risus tristique posuere.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-accordian">
+                  <div data-w-id="63961279-8858-36a7-42d5-d58e1ce14608" class="faq-question">
+                    <div class="text-size-medium text-weight-bold">Can I get Free Trial Access with TextSign?</div>
+                    <div class="faq-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M25.3333 15.667V16.3336C25.3333 16.7018 25.0349 17.0003 24.6667 17.0003H17V24.667C17 25.0351 16.7015 25.3336 16.3333 25.3336H15.6667C15.2985 25.3336 15 25.0351 15 24.667V17.0003H7.3333C6.96511 17.0003 6.66663 16.7018 6.66663 16.3336V15.667C6.66663 15.2988 6.96511 15.0003 7.3333 15.0003H15V7.33365C15 6.96546 15.2985 6.66699 15.6667 6.66699H16.3333C16.7015 6.66699 17 6.96546 17 7.33365V15.0003H24.6667C25.0349 15.0003 25.3333 15.2988 25.3333 15.667Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                  </div>
+                  <div style="width: 100%; height: 0px;" class="faq-answer">
+                    <div class="margin-bottom margin-small">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+                        diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut
+                        sem vitae risus tristique posuere.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-accordian">
+                  <div data-w-id="63961279-8858-36a7-42d5-d58e1ce14611" class="faq-question">
+                    <div class="text-size-medium text-weight-bold">Can I get refund for Year Plan?</div>
+                    <div class="faq-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M25.3333 15.667V16.3336C25.3333 16.7018 25.0349 17.0003 24.6667 17.0003H17V24.667C17 25.0351 16.7015 25.3336 16.3333 25.3336H15.6667C15.2985 25.3336 15 25.0351 15 24.667V17.0003H7.3333C6.96511 17.0003 6.66663 16.7018 6.66663 16.3336V15.667C6.66663 15.2988 6.96511 15.0003 7.3333 15.0003H15V7.33365C15 6.96546 15.2985 6.66699 15.6667 6.66699H16.3333C16.7015 6.66699 17 6.96546 17 7.33365V15.0003H24.6667C25.0349 15.0003 25.3333 15.2988 25.3333 15.667Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                  </div>
+                  <div style="width: 100%; height: 0px;" class="faq-answer">
+                    <div class="margin-bottom margin-small">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+                        diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut
+                        sem vitae risus tristique posuere.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-accordian">
+                  <div data-w-id="63961279-8858-36a7-42d5-d58e1ce1461a" class="faq-question">
+                    <div class="text-size-medium text-weight-bold">What’s the advantage with Textsign for Designers?
+                    </div>
+                    <div class="faq-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M25.3333 15.667V16.3336C25.3333 16.7018 25.0349 17.0003 24.6667 17.0003H17V24.667C17 25.0351 16.7015 25.3336 16.3333 25.3336H15.6667C15.2985 25.3336 15 25.0351 15 24.667V17.0003H7.3333C6.96511 17.0003 6.66663 16.7018 6.66663 16.3336V15.667C6.66663 15.2988 6.96511 15.0003 7.3333 15.0003H15V7.33365C15 6.96546 15.2985 6.66699 15.6667 6.66699H16.3333C16.7015 6.66699 17 6.96546 17 7.33365V15.0003H24.6667C25.0349 15.0003 25.3333 15.2988 25.3333 15.667Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                  </div>
+                  <div style="width: 100%; height: 0px;" class="faq-answer">
+                    <div class="margin-bottom margin-small">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+                        diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut
+                        sem vitae risus tristique posuere.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-accordian">
+                  <div data-w-id="63961279-8858-36a7-42d5-d58e1ce14623" class="faq-question">
+                    <div class="text-size-medium text-weight-bold">What are the Limitation with TextSign?</div>
+                    <div class="faq-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M25.3333 15.667V16.3336C25.3333 16.7018 25.0349 17.0003 24.6667 17.0003H17V24.667C17 25.0351 16.7015 25.3336 16.3333 25.3336H15.6667C15.2985 25.3336 15 25.0351 15 24.667V17.0003H7.3333C6.96511 17.0003 6.66663 16.7018 6.66663 16.3336V15.667C6.66663 15.2988 6.96511 15.0003 7.3333 15.0003H15V7.33365C15 6.96546 15.2985 6.66699 15.6667 6.66699H16.3333C16.7015 6.66699 17 6.96546 17 7.33365V15.0003H24.6667C25.0349 15.0003 25.3333 15.2988 25.3333 15.667Z"
+                          fill="currentColor"></path>
+                      </svg></div>
+                  </div>
+                  <div style="width: 100%; height: 0px;" class="faq-answer">
+                    <div class="margin-bottom margin-small">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+                        diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut
+                        sem vitae risus tristique posuere.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="margin-top margin-xxlarge">
+              <div class="text-align-center">
+                <div class="max-width-medium align-center">
+                  <div class="margin-bottom margin-xsmall">
+                    <h3>Still have questions?</h3>
+                  </div>
+                  <p class="text-size-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <div class="margin-top margin-medium"><a href="mailto:support@youremail.com"
+                      class="button is-secondary w-button">Contact</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section data-w-id="605973a0-d9bd-6641-bc9c-329b84995e2e" style="opacity: 0;" class="section-cta hide">
+      <div class="padding-global">
+        <div class="container-small">
+          <div class="padding-section-large">
+            <div class="cta-content">
+              <div class="text-align-center">
+                <div class="margin-bottom margin-small">
+                  <div class="cta-heading-top">
+                    <h2 class="heading-style-h1">Get Started with</h2>
+                  </div>
+                  <div class="cta-heading-bottom">
+                    <h2 class="heading-style-h1 text-color-gray">Future of Design</h2>
+                  </div>
+                </div>
+                <p class="text-size-medium">Packed with power beyond your imagination, yet feels so incredibly simple to
+                  use</p>
+                <div class="margin-top margin-medium">
+                  <div class="button-group is-center"><a href="https://www.gmbot.app/sign-up"
+                      class="button w-button">Start your 14-day Trial</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gradient-effect"><img src="65240879646501b4f276cc14_Gradient_BG.jpg" loading="lazy" width="1443"
+          sizes="100vw" alt=""
+          srcset="65240879646501b4f276cc14_Gradient_BG-p-500.jpg 500w, 65240879646501b4f276cc14_Gradient_BG-p-800.jpg 800w, 65240879646501b4f276cc14_Gradient_BG-p-1080.jpg 1080w, 65240879646501b4f276cc14_Gradient_BG-p-1600.jpg 1600w, 65240879646501b4f276cc14_Gradient_BG-p-2000.jpg 2000w, 65240879646501b4f276cc14_Gradient_BG.jpg 2886w">
+      </div>
+    </section>
+    <footer class="footer-component hide">
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="padding-vertical padding-xxlarge">
+            <div class="footer-news-letter-wrapper">
+              <div class="footer-news-letter-text-wrapper">
+                <div class="text-weight-semi-bold text-size-medium">Join our newsletter</div>
+                <p class="text-color-gray">Keep up to Data with everrthing related to AI Design</p>
+              </div>
+              <div class="footer-form-block w-form">
+                <form id="email-form" name="email-form" data-name="Email Form" method="get" class="footer-form"
+                  data-wf-page-id="65240879646501b4f276cbca" data-wf-element-id="7f481a18-4158-c9de-0a69-f96f63d1d628"
+                  aria-label="Email Form"><input type="email" class="form-input w-input" maxlength="256" name="email-2"
+                    data-name="Email 2" placeholder="Enter your email" id="email-2" required="" value=""><a href="#"
+                    class="button is-secondary is-small w-button">Subscribe</a></form>
+                <div class="text-size-tiny">By subscribing you agree to with our <a href="#"><span>Privacy
+                      Policy</span></a> </div>
+                <div class="success-message w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="error-message w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
+                  <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+              </div>
+            </div>
+            <div class="padding-vertical padding-xlarge">
+              <div class="line-divider"></div>
+            </div>
+            <div class="padding-bottom padding-xxlarge">
+              <div class="w-layout-grid footer-top-wrapper">
+                <div class="footer-left-wrapper">
+                  <div class="margin-bottom margin-medium"><a href="" aria-current="page"
+                      class="footer-logo-link w-nav-brand w--current"><img
+                        src="65240879646501b4f276cc13_TextSign_Logo.png" loading="lazy" width="137" alt=""></a></div>
+                  <div class="margin-bottom margin-medium">
+                    <div class="footer-details-wrapper">
+                      <div class="text-size-small"><span class="text-weight-semi-bold">Packed with power beyond your
+                          imagination, yet feels so incredibly simple to use</span></div>
+                    </div>
+                  </div>
+                  <div class="w-layout-grid footer-social-list"><a href="http://facebook.com/"
+                      class="footer-social-link w-inline-block"><img src="65240879646501b4f276cbf9_Facebook.png"
+                        loading="lazy" width="24" alt=""></a><a href="http://instagram.com/"
+                      class="footer-social-link w-inline-block"><img src="65240879646501b4f276cc00_Instagram.png"
+                        loading="lazy" width="24" alt=""></a><a href="http://twitter.com/"
+                      class="footer-social-link w-inline-block"><img src="65240879646501b4f276cc0f_Twiiter.png"
+                        loading="lazy" width="24" alt=""></a><a href="http://linkedin.com/"
+                      class="footer-social-link w-inline-block"><img src="65240879646501b4f276cc01_LinkedIn.png"
+                        loading="lazy" width="24" alt=""></a></div>
+                </div>
+                <div class="w-layout-grid footer-menu-wrapper">
+                  <div class="footer-link-list"><a href="#Feature" class="footer-link">Feature</a><a href="#Pricing"
+                      class="footer-link">Pricing</a><a href="mailto:support@youremai.com"
+                      class="footer-link">Contact</a><a href="https://www.gmbot.app/log-in" class="footer-link">Log
+                      In</a><a href="https://www.gmbot.app/sign-up" class="footer-link">Sign Up</a></div>
+                  <div class="footer-link-list"><a href="https://www.gmbot.app/utility-pages/style-guide"
+                      class="footer-link">Style Guide</a><a href="https://www.gmbot.app/utility-pages/license"
+                      class="footer-link">License</a><a href="https://webflow.com/templates/designers/factor-theme"
+                      class="footer-link">Buy Template</a><a href="https://webflow.com/templates/designers/factor-theme"
+                      class="footer-link">Privacy Policy</a><a
+                      href="https://webflow.com/templates/designers/factor-theme" class="footer-link">Terms and
+                      Service</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="line-divider"></div>
+            <div class="padding-top padding-medium">
+              <div class="footer-bottom-wrapper">
+                <div class="footer-credit-text">Made by <a href="http://factortheme.com/">FactorTheme</a>. Powered by <a
+                    href="http://webflow.com/">Webflow</a></div>
+              </div>
+              <div class="padding-top padding-medium">
+                <div class="text-align-center">
+                  <div class="footer-credit-text text-color-gray">©Textsign. All rights reserved.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
